@@ -1,0 +1,41 @@
+.about-container {
+  padding: 20px;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+.about-container h1 {
+  font-size: 24px;
+  color: white;
+}
+
+.about-container p {
+  font-size: 16px;
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  background-color: #ffffffce;
+  border-radius: 8px;
+  box-shadow: 4px 8px rgb(114, 101, 235);
+  
+}
+
+.icon-container i {
+  color: rgb(114, 101, 235);
+}
+
+.active-link {
+  font-weight: bold; /* Example style for the active link */
+  color: red; /* Example color for the active link */
+}
+
