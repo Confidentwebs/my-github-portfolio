@@ -7,7 +7,6 @@ import RepoDetails from './pages/Repodetails'
 import ErrorPage from './pages/ErrorPage'
 import AppOutlet from './pages/AppOutlet'
 import About from './pages/About'
-import ErrorBoundary from './pages/ErrorBoundary'
 
 
 
@@ -16,15 +15,11 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<Home />} errorElement={<ErrorPage />} />
       <Route path="/about" element={<About />} />
-      <Route path="/repodetails" element={<ErrorBoundary><AppOutlet /></ErrorBoundary>}>
+      <Route path="/repodetails" element={<AppOutlet />}>
         <Route path=":id" element={<RepoDetails />} />
-        <Route path="" element={<AppOutlet />}></Route>
+        <Route path="" element={<AppOutlet />} />
       </Route>
-      
     </>
- 
-
-    
   )
 );
 
